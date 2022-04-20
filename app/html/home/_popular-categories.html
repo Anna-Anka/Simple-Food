@@ -1,0 +1,118 @@
+<section class="popular-categories section">
+    <div class="container">
+        <h2 class="popular-categories__title title">
+            Популярные категории
+        </h2>
+        <ul class="categories">
+            <li class="categories__item">
+                <button class="categories__btn categories__btn--burger" type="button" data-filter="all">
+                    Бургеры
+                </button>
+            </li>
+            <li class="categories__item">
+                <button class="categories__btn categories__btn--pizza" type="button" data-filter=".pizza">
+                    Пицца
+                </button>
+            </li>
+            <li class="categories__item">
+                <button class="categories__btn categories__btn--sandwich" type="button" data-filter=".sandwich">
+                    Сендвичи
+                </button>
+            </li>
+            <li class="categories__item">
+                <button class="categories__btn categories__btn--asia" type="button" data-filter=".asia">
+                    Азиатская кухня
+                </button>
+            </li>
+            <li class="categories__item">
+                <button class="categories__btn categories__btn--dish" type="button" data-filter=".dish">
+                    Cеты
+                </button>
+            </li>
+        </ul>
+
+        <ul class="popular-categories__items">
+            <li class="popular-categories__item mix asida">
+                @include("../components/_product-card.html", {
+                "img" : "cheeseburger",
+                "alt" : "Чизбургер с листьями салата",
+                "title" : "Чизбургер с листьями салата",
+                "price" : "160"
+                })
+            </li>
+            <li class="popular-categories__item mix pizza">
+                @include("../components/_product-card.html", {
+                "img" : "beefburger",
+                "alt" : "Бифбургер",
+                "title" : "Бифбургер",
+                "price" : "190"
+                })
+            </li>
+            <li class="popular-categories__item mix asia">
+                @include("../components/_product-card.html", {
+                "img" : "royal-cheeseburger",
+                "alt" : "Королевский чизбургер",
+                "title" : "Королевский чизбургер",
+                "price" : "260"
+                })
+            </li>
+            <li class="popular-categories__item mix sandwich">
+                @include("../components/_product-card.html", {
+                "img" : "black-hamburger",
+                "alt" : "Черный гамбургер",
+                "title" : "Черный гамбургер",
+                "price" : "199"
+                })
+            </li>
+            <li class="popular-categories__item mix dish">
+                @include("../components/_product-card.html", {
+                "img" : "chicken-burger",
+                "alt" : "Чикен бургер",
+                "title" : "Чикен бургер",
+                "price" : "180"
+                })
+            </li>
+            <li class="popular-categories__item mix asida">
+                @include("../components/_product-card.html", {
+                "img" : "cheeseburger",
+                "alt" : "Чизбургер с листьями салата",
+                "title" : "Чизбургер с листьями салата",
+                "price" : "160"
+                })
+            </li>
+            <li class="popular-categories__item mix pizza">
+                @include("../components/_product-card.html", {
+                "img" : "beefburger",
+                "alt" : "Бифбургер",
+                "title" : "Бифбургер",
+                "price" : "190"
+                })
+            </li>
+            <li class="popular-categories__item mix asia">
+                @include("../components/_product-card.html", {
+                "img" : "royal-cheeseburger",
+                "alt" : "Королевский чизбургер",
+                "title" : "Королевский чизбургер",
+                "price" : "260"
+                })
+            </li>
+            <li class="popular-categories__item mix sandwich">
+                @include("../components/_product-card.html", {
+                "img" : "black-hamburger",
+                "alt" : "Черный гамбургер",
+                "title" : "Черный гамбургер",
+                "price" : "199"
+                })
+            </li>
+            <li class="popular-categories__item mix dish">
+                @include("../components/_product-card.html", {
+                "img" : "chicken-burger",
+                "alt" : "Чикен бургер",
+                "title" : "Чикен бургер",
+                "price" : "180"
+                })
+            </li>
+            
+        </ul>
+    </div>
+</section>

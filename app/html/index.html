@@ -1,0 +1,15 @@
+@include("./components/_top.html", {
+"title" : "SimpleFood | Главная страница"
+})
+
+@include("./components/_header.html")
+
+<main class="main">
+    <h1 class="sr-only">
+        SimpleFood — сервис по доставки еды
+    </h1>
+    @include("./home/_delivery.html")
+    @include("./home/_popular-categories.html") 
+</main>
+@include("./components/_footer.html")
+@include("./components/_bottom.html")

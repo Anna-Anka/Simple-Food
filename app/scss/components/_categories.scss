@@ -1,0 +1,94 @@
+.categories {
+    display: flex;
+    margin-bottom: 41px;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__btn {
+        font-size: 20px;
+        color: $darkBlue-900;
+        padding: 22px 36px 22px 86px;
+        background-color: $white;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px $silver-200;
+        position: relative;
+        transition: color 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+        &:focus,
+        &:hover {
+            box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+        }
+
+        &:hover {
+            background-color: rgba($orange-900, 0.1);
+            color: $orange-900;
+
+            &::before {
+                background-color: $orange-900;
+            }
+        }
+
+        &:active {
+            box-shadow: inset 0 -5px 12px rgba($orange-900, 0.2);
+        }
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
+            width: 44px;
+            height: 44px;
+            left: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $darkBlue-900;
+            transition: background-color 0.3s;
+        }
+
+        &--burger {
+            &::before {
+                mask-image: url('../img/categories/burger.svg');
+            }
+        }
+
+        &--pizza {
+            &::before {
+                mask-image: url('../img/categories/pizza.svg');
+            }
+        }
+
+        &--sandwich {
+            &::before {
+                mask-image: url('../img/categories/sandwich.svg');
+            }
+        }
+
+        &--asia {
+            &::before {
+                mask-image: url('../img/categories/asia.svg');
+            }
+        }
+
+        &--dish {
+            &::before {
+                mask-image: url('../img/categories/dish.svg');
+            }
+        }
+    }
+
+    .mixitup-control-active {
+        background-color: $orange-900;
+        color: $white;
+
+        &::before {
+            background-color: $white;  
+        }
+    }
+}

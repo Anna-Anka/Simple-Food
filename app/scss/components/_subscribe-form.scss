@@ -1,0 +1,55 @@
+.subscribe-form {
+    &__field {
+        margin-bottom: 12px;
+        padding: 13px 15px;
+        background-color: $white;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+        width: 100%;
+
+        &::placeholder {
+            color: $gray;
+            transition: color 0.3s;
+        }
+
+        &:focus {
+            border-color: $orange-900;
+        }
+
+        &:hover {
+            &::placeholder {
+                color: $darkBlue-900;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            mask-image: url("../img/sprite.svg#subscribe");
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            background-color: $white;
+            left: 38px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            transition: background-color 0.3s;
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+            &::before {
+                background-color: $orange-900;
+            }
+        }
+    }
+}

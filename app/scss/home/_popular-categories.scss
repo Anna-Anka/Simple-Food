@@ -1,0 +1,16 @@
+.popular-categories {
+    &__title {
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,37 @@
+.social {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+        width: 39px;
+        height: 39px;
+        z-index: 1;
+        background-color: $silver-200;
+        border-radius: 50%;
+        transition: box-shadow 0.3s, background-color 0.3s;
+
+        &:focus {
+            box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+            background-color: $silver-150;
+        }
+
+        &:hover {
+            background-color: $red-500;
+            filter: brightness(6.5);
+        }
+
+        &:active {
+            background-color: $gray-800;
+            filter: invert(59%) sepia(12%) saturate(2791%) hue-rotate(324deg) brightness(100%) contrast(102%);
+        }
+    }
+}

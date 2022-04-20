@@ -1,0 +1,19 @@
+@import 'fonts';
+@import 'vars';
+@import 'reset';
+@import 'mixins';
+/*@import 'libs'; */
+@import 'global';
+
+/*КОМПОНЕНТЫ*/
+@import 'components/header.scss';
+@import 'components/product-card.scss';
+@import 'components/categories.scss';
+@import 'components/contacts-info.scss';
+@import 'components/social.scss';
+@import 'components/subscribe-form.scss';
+@import 'components/footer.scss';
+
+// Home
+@import 'home/delivery.scss';
+@import 'home/popular-categories.scss'
