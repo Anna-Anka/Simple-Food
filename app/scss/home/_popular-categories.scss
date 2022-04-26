@@ -7,10 +7,19 @@
         display: grid;
         grid-gap: 30px;
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        margin-bottom: 60px;
     }
 
     &__item {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+    }
+
+    &__more {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 1.5;
+        text-decoration: underline;
     }
 }

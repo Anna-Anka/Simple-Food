@@ -1,12 +1,14 @@
 <article class="product-card">
-    <img src="img/product/@img.jpg" alt="@alt" width="140" height="140">
+    <img class="product-card__img" src="img/product/@img.jpg" alt="@alt" width="140" height="140">
     <h3 class="product-card__title">
         <a class="product-card__link" href="#">@title</a>
     </h3>
-    <span class="product-card__price">
-        @price <span>руб.</span>
-    </span>
-    <button class="product-card__button link" type="button">
-        В корзину
-    </button>
+    <div class="product-card__bottom">
+        <span class="product-card__price">
+            @price <span>руб.</span>
+        </span>
+        <button class="product-card__button link" type="button">
+            В корзину
+        </button>
+    </div>
 </article>
