@@ -1,0 +1,40 @@
+.restaurant-card {
+    &__img {
+        width: 100%;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 0 20px 20px;
+    }
+
+    &__title {
+        margin-bottom: 20px;  
+        font-size: 24px;  
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__time {
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__link {
+
+    }
+}

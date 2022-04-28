@@ -1,0 +1,63 @@
+<section class="best-restaurants section">
+    <div class="container">
+        <h2 class="title">
+            Лучшие рестораны
+        </h2>
+        <ul class="best-restaurants__items">
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "blaze",
+                "alt" : "Blaze Pizza",
+                "title" : "Blaze Pizza",
+                "time" : "11:00 - 22:00",
+                })
+            </li>
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "runcho",
+                "alt" : "Pizza Runcho",
+                "title" : "Pizza Runcho",
+                "time" : "12:00 - 21:00",
+                })
+            </li>
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "hut",
+                "alt" : "Pizza Hut",
+                "title" : "Pizza Hut",
+                "time" : "11:00 - 22:00",
+                })
+            </li>
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "mcd",
+                "alt" : "McDonald`s",
+                "title" : "McDonald`s",
+                "time" : "06:00 - 23:00",
+                })
+            </li>
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "kfc",
+                "alt" : "KFC",
+                "title" : "KFC",
+                "time" : "06:00 - 23:30",
+                })
+            </li>
+            <li class="best-restaurants__item">
+                @include("../components/_restaurant-card.html", {
+                "card" : "full",
+                "img" : "burgers",
+                "alt" : "Star Burgers",
+                "title" : "Star Burgers",
+                "time" : "09:00 - 21:00",
+                })
+            </li>
+        </ul>
+    </div>
+</section>
