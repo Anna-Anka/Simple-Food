@@ -2,7 +2,7 @@
 @import 'vars';
 @import 'reset';
 @import 'mixins';
-/*@import 'libs'; */
+@import 'libs';
 @import 'global';
 
 /*КОМПОНЕНТЫ*/
@@ -14,9 +14,11 @@
 @import 'components/subscribe-form.scss';
 @import 'components/restaurant-card.scss';
 @import 'components/footer.scss';
+@import 'components/app.scss';
 
 // Home
 @import 'home/delivery.scss';
 @import 'home/popular-categories.scss';
 @import 'home/advantages.scss';
 @import 'home/best-restaurants.scss';
+@import 'home/reviews.scss';

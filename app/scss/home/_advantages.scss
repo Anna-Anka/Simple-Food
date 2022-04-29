@@ -1,22 +1,21 @@
 .advantages {
+
     &__wrapper {
         max-width: 1030px;
         margin: 0 auto;
-        position: relative;
-        min-height: 585px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         max-width: 440px;
         height: 585px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-
+        margin-right: 20px;
     }
 
     &__content {
@@ -31,6 +30,8 @@
 
     &__text {
         margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 1.5;
 
         p {
             &:not(:last-child) {
